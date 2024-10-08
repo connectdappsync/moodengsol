@@ -1,0 +1,562 @@
+<!DOCTYPE html><html lang="fr" style="" data-scrapbook-source="https://moodengsol-in.web.app/" data-scrapbook-create="20241008212052279" data-scrapbook-title="$moodeng"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$moodeng</title> 
+    <style>
+        :root {
+            --sf-img-3: url("5d374a307e1026097872dab3ad52a6adf0090180.png");
+            --sf-img-4: url("a704c12805ddd5abde288b2e7c56e503bbc9a0e0.png");
+            --sf-img-5: url("6e5e717a308938d4366a3159404b61f013484c9b.png");
+            --sf-img-6: url("b73b7d06dae74dff9d87eb24ae95177fe908ded8.png");
+            --sf-img-7: url("d6caaab39bb7068babc370378ef98f287a3f040b.png");
+            --sf-img-8: url("2c5d9274812c7c79049bb4dcdf75a5f927d22f9e.png")
+        }
+    </style> 
+    <style>
+        img[src="data:,"],
+        source[src="data:,"] {
+            display: none !important
+        }
+        .interact-button {
+            cursor: pointer;
+        }
+    </style>
+  
+<style id="aircall-extension-style">.aircall-extension-button{display:inline;border:0;font-size:100%;font:inherit;vertical-align:baseline;font-weight:normal;font-style:normal;color:var(--extensionButtonColor);cursor:pointer !important;background-color:var(--extensionButtonBackground) !important;border-radius:100px !important;padding-top:0px !important;padding-left:6px !important;padding-bottom:0px !important;line-height:initial !important;background-image:url("") !important;background-position:right 6px center !important;background-repeat:no-repeat !important;background-size:auto 60% !important}.pseudo-aircall-extension-button{display:inline;position:relative}.pseudo-aircall-extension-button:after{content:url("");position:absolute;left:calc(100% + 5px);cursor:pointer;top:50%;transform:translateY(-50%);width:20px;height:20px;background-color:var(--extensionButtonBackground);border-radius:50%}.input-aircall-extension-button{display:inline-block;cursor:pointer;background-image:url("");background-repeat:no-repeat;background-position:center;width:20px;height:20px;background-color:var(--extensionButtonBackground);border-radius:50%}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb250ZW50U2NyaXB0L3NyYy9sZWdhY3lfU0NTUy9tYWluLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEJBQ0UsY0FBQSxDQUNBLFFBQUEsQ0FDQSxjQUFBLENBQ0EsWUFBQSxDQUNBLHVCQUFBLENBQ0Esa0JBQUEsQ0FDQSxpQkFBQSxDQUVBLGlDQUFBLENBQ0EseUJBQUEsQ0FDQSw0REFBQSxDQUNBLDhCQUFBLENBQ0EsMEJBQUEsQ0FDQSwyQkFBQSxDQUNBLDZCQUFBLENBQ0EsOEJBQUEsQ0FFQSxtRUFBQSxDQUNBLCtDQUFBLENBQ0Esc0NBQUEsQ0FDQSxtQ0FBQSxDQUdGLGlDQUNFLGNBQUEsQ0FDQSxpQkFBQSxDQUdGLHVDQUNFLCtDQUFBLENBQ0EsaUJBQUEsQ0FDQSxxQkFBQSxDQUNBLGNBQUEsQ0FDQSxPQUFBLENBQ0EsMEJBQUEsQ0FDQSxVQUFBLENBQ0EsV0FBQSxDQUNBLGlEQUFBLENBQ0EsaUJBQUEsQ0FHRixnQ0FDRSxvQkFBQSxDQUNBLGNBQUEsQ0FDQSx3REFBQSxDQUNBLDJCQUFBLENBQ0EsMEJBQUEsQ0FDQSxVQUFBLENBQ0EsV0FBQSxDQUNBLGlEQUFBLENBQ0EsaUJBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIuYWlyY2FsbC1leHRlbnNpb24tYnV0dG9uIHtcbiAgZGlzcGxheTogaW5saW5lO1xuICBib3JkZXI6IDA7XG4gIGZvbnQtc2l6ZTogMTAwJTtcbiAgZm9udDogaW5oZXJpdDtcbiAgdmVydGljYWwtYWxpZ246IGJhc2VsaW5lO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG5cbiAgY29sb3I6IHZhcigtLWV4dGVuc2lvbkJ1dHRvbkNvbG9yKTtcbiAgY3Vyc29yOiBwb2ludGVyICFpbXBvcnRhbnQ7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWV4dGVuc2lvbkJ1dHRvbkJhY2tncm91bmQpICFpbXBvcnRhbnQ7XG4gIGJvcmRlci1yYWRpdXM6IDEwMHB4ICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmctdG9wOiAwcHggIWltcG9ydGFudDtcbiAgcGFkZGluZy1sZWZ0OiA2cHggIWltcG9ydGFudDtcbiAgcGFkZGluZy1ib3R0b206IDBweCAhaW1wb3J0YW50O1xuICBsaW5lLWhlaWdodDogaW5pdGlhbCAhaW1wb3J0YW50O1xuXG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnZGF0YTppbWFnZS9zdmcreG1sOyB1dGY4LCA8c3ZnIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIiB3aWR0aD1cIjhcIiBoZWlnaHQ9XCI4XCIgdmlld0JveD1cIjAgMCA4IDhcIj48cGF0aCBmaWxsPVwiJTIzRkZGXCIgZmlsbC1ydWxlPVwiZXZlbm9kZFwiIGQ9XCJNNDkwLjY1MTcwNCwyMTQuNzYxODI5IEM0OTAuNDYyMTkzLDIxNC41ODM4NCA0OTAuMjQxMDk3LDIxNC40NTQzOTMgNDkwLjAyMDAwMSwyMTQuMzQxMTI3IEM0ODkuNjg4MzU2LDIxNC4xNzkzMTkgNDg5LjE5ODc4NiwyMTMuOTIwNDI2IDQ4OC44MzU1NTYsMjE0LjE2MzEzOCBDNDg4LjcwOTIxNSwyMTQuMjQ0MDQzIDQ4OC42MTQ0NiwyMTQuMzg5NjcgNDg4LjUwMzkxMiwyMTQuNDg2NzU1IEM0ODguMzYxNzc4LDIxNC42MzIzODIgNDg4LjIwMzg1MiwyMTQuNzc4MDA5IDQ4OC4wMTQzNDEsMjE0Ljg3NTA5NCBDNDg3LjIwODkxOSwyMTUuMjk1Nzk1IDQ4Ni4xNTA4MTUsMjE1LjExNzgwNiA0ODUuNDg3NTI2LDIxNC40ODY3NTUgQzQ4NS4xMDg1MDQsMjE0LjA4MjIzNCA0ODQuODcxNjE1LDIxMy40OTk3MjUgNDg0Ljg4NzQwOCwyMTIuOTMzMzk3IEM0ODQuOTAzMiwyMTIuNDk2NTE1IDQ4NS4wNDUzMzQsMjEyLjA0MzQ1MiA0ODUuMzEzODA4LDIxMS42ODc0NzQgQzQ4NS40MjQzNTYsMjExLjU0MTg0NyA0ODUuNTY2NDg5LDIxMS40MTI0IDQ4NS42OTI4MywyMTEuMjY2NzczIEM0ODUuODE5MTcxLDIxMS4xMzczMjYgNDg1Ljg5ODEzNCwyMTAuOTkxNjk5IDQ4NS44OTgxMzQsMjEwLjc5NzUyOSBDNDg1Ljg5ODEzNCwyMTAuNTU0ODE3IDQ4NS43ODc1ODYsMjEwLjMyODI4NiA0ODUuNjkyODMsMjEwLjEwMTc1NCBDNDg1LjU5ODA3NCwyMDkuODkxNDA0IDQ4NS41MDMzMTksMjA5LjY2NDg3MiA0ODUuMzYxMTg2LDIwOS40ODY4ODMgQzQ4NS4yMzQ4NDUsMjA5LjMwODg5NCA0ODUuMDQ1MzM0LDIwOS4xMTQ3MjUgNDg0Ljg0MDAzLDIwOS4wMzM4MjEgQzQ4NC43NDUyNzQsMjA5LjAwMTQ1OSA0ODQuNjUwNTE5LDIwOC45ODUyNzggNDg0LjU1NTc2MywyMDkuMDE3NjQgQzQ4NC40Mjk0MjMsMjA5LjA1MDAwMSA0ODQuMzM0NjY3LDIwOS4xNDcwODYgNDg0LjIzOTkxMSwyMDkuMjI3OTkgQzQ4My44MjkzMDQsMjA5LjU1MTYwNyA0ODMuNDAyOTA0LDIwOS45MjM3NjUgNDgzLjE5NzYsMjEwLjQwOTE5IEM0ODIuODUwMTYzLDIxMS4xODU4NjkgNDgzLjAwODA4OSwyMTIuMDc1ODE0IDQ4My4zMDgxNDgsMjEyLjgzNjMxMiBDNDgzLjY1NTU4NSwyMTMuNjkzODk1IDQ4NC4yMjQxMTksMjE0LjQ3MDU3NCA0ODQuODg3NDA4LDIxNS4xMDE2MjYgQzQ4NS4yODIyMjMsMjE1LjUwNjE0NiA0ODUuNzI0NDE1LDIxNS44NzgzMDUgNDg2LjE5ODE5MywyMTYuMTg1NzQgQzQ4Ni44MTQxMDQsMjE2LjU3NDA4IDQ4Ny41MjQ3NzEsMjE2Ljg5NzY5NiA0ODguMjUxMjMsMjE2Ljk3ODYgQzQ4OC43NTY1OTMsMjE3LjA0MzMyMyA0ODkuMjkzNTQxLDIxNi45NjI0MTkgNDg5LjczNTczNCwyMTYuNzE5NzA3IEM0ODkuOTI1MjQ1LDIxNi42MDY0NDEgNDkwLjA5ODk2NCwyMTYuNDc2OTk1IDQ5MC4yNTY4ODksMjE2LjMxNTE4NyBDNDkwLjQzMDYwOCwyMTYuMTM3MTk4IDQ5MC42MjAxMTksMjE1Ljk0MzAyOCA0OTAuNzYyMjUyLDIxNS43NDg4NTggQzQ5MC44NTcwMDgsMjE1LjYzNTU5MiA0OTAuOTgzMzQ5LDIxNS41MjIzMjcgNDkwLjk5OTE0MSwyMTUuMzQ0MzM4IEM0OTEuMDE0OTM0LDIxNS4xMTc4MDYgNDkwLjgwOTYzLDIxNC45MDc0NTYgNDkwLjY1MTcwNCwyMTQuNzYxODI5IFpcIiB0cmFuc2Zvcm09XCJ0cmFuc2xhdGUoLTQ4MyAtMjA5KVwiLz48L3N2Zz4nKSAhaW1wb3J0YW50O1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiByaWdodCA2cHggY2VudGVyICFpbXBvcnRhbnQ7XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQgIWltcG9ydGFudDtcbiAgYmFja2dyb3VuZC1zaXplOiBhdXRvIDYwJSAhaW1wb3J0YW50O1xufVxuXG4ucHNldWRvLWFpcmNhbGwtZXh0ZW5zaW9uLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGlubGluZTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuXG4ucHNldWRvLWFpcmNhbGwtZXh0ZW5zaW9uLWJ1dHRvbjphZnRlciB7XG4gIGNvbnRlbnQ6IHVybCgnZGF0YTppbWFnZS9zdmcreG1sOyB1dGY4LCA8c3ZnIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIiB3aWR0aD1cIjIwXCIgaGVpZ2h0PVwiMjBcIiB2aWV3Qm94PVwiMCAwIDIwIDIwXCI+PGcgZmlsbD1cIm5vbmVcIiBmaWxsLXJ1bGU9XCJldmVub2RkXCI+PHJlY3Qgd2lkdGg9XCIyMFwiIGhlaWdodD1cIjIwXCIgcng9XCIxMFwiLz48cGF0aCBmaWxsPVwiJTIzRkZGXCIgZD1cIk0xMy42NTE3MDQzLDExLjc2MTgyODUgQzEzLjQ2MjE5MzIsMTEuNTgzODM5NiAxMy4yNDEwOTY4LDExLjQ1NDM5MzEgMTMuMDIwMDAwNSwxMS4zNDExMjc0IEMxMi42ODgzNTYxLDExLjE3OTMxOTMgMTIuMTk4Nzg1NywxMC45MjA0MjYyIDExLjgzNTU1NiwxMS4xNjMxMzg0IEMxMS43MDkyMTUzLDExLjI0NDA0MjUgMTEuNjE0NDU5NywxMS4zODk2Njk4IDExLjUwMzkxMTYsMTEuNDg2NzU0NyBDMTEuMzYxNzc4MiwxMS42MzIzODIgMTEuMjAzODUyMywxMS43NzgwMDkzIDExLjAxNDM0MTIsMTEuODc1MDk0MiBDMTAuMjA4OTE4OSwxMi4yOTU3OTU0IDkuMTUwODE1MTksMTIuMTE3ODA2NCA4LjQ4NzUyNjI4LDExLjQ4Njc1NDcgQzguMTA4NTA0MDQsMTEuMDgyMjM0NCA3Ljg3MTYxNTE0LDEwLjQ5OTcyNTEgNy44ODc0MDc3Myw5LjkzMzM5NjY0IEM3LjkwMzIwMDMzLDkuNDk2NTE0NjggOC4wNDUzMzM2Niw5LjA0MzQ1MTkxIDguMzEzODA3NzUsOC42ODc0NzQwMiBDOC40MjQzNTU5LDguNTQxODQ2NyA4LjU2NjQ4OTI0LDguNDEyNDAwMTkgOC42OTI4Mjk5OSw4LjI2Njc3Mjg3IEM4LjgxOTE3MDczLDguMTM3MzI2MzcgOC44OTgxMzM3LDcuOTkxNjk5MDUgOC44OTgxMzM3LDcuNzk3NTI5MjkgQzguODk4MTMzNyw3LjU1NDgxNzA5IDguNzg3NTg1NTUsNy4zMjgyODU3MSA4LjY5MjgyOTk5LDcuMTAxNzU0MzIgQzguNTk4MDc0NDMsNi44OTE0MDM3NSA4LjUwMzMxODg3LDYuNjY0ODcyMzcgOC4zNjExODU1Myw2LjQ4Njg4MzQyIEM4LjIzNDg0NDc4LDYuMzA4ODk0NDcgOC4wNDUzMzM2Niw2LjExNDcyNDcyIDcuODQwMDI5OTUsNi4wMzM4MjA2NSBDNy43NDUyNzQzOSw2LjAwMTQ1OTAyIDcuNjUwNTE4ODMsNS45ODUyNzgyMSA3LjU1NTc2MzI3LDYuMDE3NjM5ODQgQzcuNDI5NDIyNTMsNi4wNTAwMDE0NiA3LjMzNDY2Njk3LDYuMTQ3MDg2MzQgNy4yMzk5MTE0MSw2LjIyNzk5MDQxIEM2LjgyOTMwMzk4LDYuNTUxNjA2NjcgNi40MDI5MDM5Nyw2LjkyMzc2NTM4IDYuMTk3NjAwMjUsNy40MDkxODk3NyBDNS44NTAxNjMyLDguMTg1ODY4ODEgNi4wMDgwODkxMyw5LjA3NTgxMzUzIDYuMzA4MTQ4NDEsOS44MzYzMTE3NiBDNi42NTU1ODU0NiwxMC42OTM4OTQ5IDcuMjI0MTE4ODIsMTEuNDcwNTczOSA3Ljg4NzQwNzczLDEyLjEwMTYyNTYgQzguMjgyMjIyNTYsMTIuNTA2MTQ1OSA4LjcyNDQxNTE3LDEyLjg3ODMwNDYgOS4xOTgxOTI5NywxMy4xODU3NDAxIEM5LjgxNDEwNDExLDEzLjU3NDA3OTYgMTAuNTI0NzcwOCwxMy44OTc2OTU5IDExLjI1MTIzMDEsMTMuOTc4NTk5OSBDMTEuNzU2NTkzMSwxNC4wNDMzMjMyIDEyLjI5MzU0MTMsMTMuOTYyNDE5MSAxMi43MzU3MzM5LDEzLjcxOTcwNjkgQzEyLjkyNTI0NSwxMy42MDY0NDEyIDEzLjA5ODk2MzUsMTMuNDc2OTk0NyAxMy4yNTY4ODk0LDEzLjMxNTE4NjYgQzEzLjQzMDYwOCwxMy4xMzcxOTc3IDEzLjYyMDExOTEsMTIuOTQzMDI3OSAxMy43NjIyNTI0LDEyLjc0ODg1ODEgQzEzLjg1NzAwOCwxMi42MzU1OTI0IDEzLjk4MzM0ODcsMTIuNTIyMzI2OCAxMy45OTkxNDEzLDEyLjM0NDMzNzggQzE0LjAxNDkzMzksMTIuMTE3ODA2NCAxMy44MDk2MzAyLDExLjkwNzQ1NTggMTMuNjUxNzA0MywxMS43NjE4Mjg1IFpcIi8+PC9nPjwvc3ZnPicpO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IGNhbGMoMTAwJSArIDVweCk7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdG9wOiA1MCU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgd2lkdGg6IDIwcHg7XG4gIGhlaWdodDogMjBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tZXh0ZW5zaW9uQnV0dG9uQmFja2dyb3VuZCk7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbn1cblxuLmlucHV0LWFpcmNhbGwtZXh0ZW5zaW9uLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJ2RhdGE6aW1hZ2Uvc3ZnK3htbDsgdXRmOCwgPHN2ZyB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCIgd2lkdGg9XCIyMFwiIGhlaWdodD1cIjIwXCIgdmlld0JveD1cIjAgMCAyMCAyMFwiPjxnIGZpbGw9XCJub25lXCIgZmlsbC1ydWxlPVwiZXZlbm9kZFwiPjxyZWN0IHdpZHRoPVwiMjBcIiBoZWlnaHQ9XCIyMFwiIHJ4PVwiMTBcIi8+PHBhdGggZmlsbD1cIiUyM0ZGRlwiIGQ9XCJNMTMuNjUxNzA0MywxMS43NjE4Mjg1IEMxMy40NjIxOTMyLDExLjU4MzgzOTYgMTMuMjQxMDk2OCwxMS40NTQzOTMxIDEzLjAyMDAwMDUsMTEuMzQxMTI3NCBDMTIuNjg4MzU2MSwxMS4xNzkzMTkzIDEyLjE5ODc4NTcsMTAuOTIwNDI2MiAxMS44MzU1NTYsMTEuMTYzMTM4NCBDMTEuNzA5MjE1MywxMS4yNDQwNDI1IDExLjYxNDQ1OTcsMTEuMzg5NjY5OCAxMS41MDM5MTE2LDExLjQ4Njc1NDcgQzExLjM2MTc3ODIsMTEuNjMyMzgyIDExLjIwMzg1MjMsMTEuNzc4MDA5MyAxMS4wMTQzNDEyLDExLjg3NTA5NDIgQzEwLjIwODkxODksMTIuMjk1Nzk1NCA5LjE1MDgxNTE5LDEyLjExNzgwNjQgOC40ODc1MjYyOCwxMS40ODY3NTQ3IEM4LjEwODUwNDA0LDExLjA4MjIzNDQgNy44NzE2MTUxNCwxMC40OTk3MjUxIDcuODg3NDA3NzMsOS45MzMzOTY2NCBDNy45MDMyMDAzMyw5LjQ5NjUxNDY4IDguMDQ1MzMzNjYsOS4wNDM0NTE5MSA4LjMxMzgwNzc1LDguNjg3NDc0MDIgQzguNDI0MzU1OSw4LjU0MTg0NjcgOC41NjY0ODkyNCw4LjQxMjQwMDE5IDguNjkyODI5OTksOC4yNjY3NzI4NyBDOC44MTkxNzA3Myw4LjEzNzMyNjM3IDguODk4MTMzNyw3Ljk5MTY5OTA1IDguODk4MTMzNyw3Ljc5NzUyOTI5IEM4Ljg5ODEzMzcsNy41NTQ4MTcwOSA4Ljc4NzU4NTU1LDcuMzI4Mjg1NzEgOC42OTI4Mjk5OSw3LjEwMTc1NDMyIEM4LjU5ODA3NDQzLDYuODkxNDAzNzUgOC41MDMzMTg4Nyw2LjY2NDg3MjM3IDguMzYxMTg1NTMsNi40ODY4ODM0MiBDOC4yMzQ4NDQ3OCw2LjMwODg5NDQ3IDguMDQ1MzMzNjYsNi4xMTQ3MjQ3MiA3Ljg0MDAyOTk1LDYuMDMzODIwNjUgQzcuNzQ1Mjc0MzksNi4wMDE0NTkwMiA3LjY1MDUxODgzLDUuOTg1Mjc4MjEgNy41NTU3NjMyNyw2LjAxNzYzOTg0IEM3LjQyOTQyMjUzLDYuMDUwMDAxNDYgNy4zMzQ2NjY5Nyw2LjE0NzA4NjM0IDcuMjM5OTExNDEsNi4yMjc5OTA0MSBDNi44MjkzMDM5OCw2LjU1MTYwNjY3IDYuNDAyOTAzOTcsNi45MjM3NjUzOCA2LjE5NzYwMDI1LDcuNDA5MTg5NzcgQzUuODUwMTYzMiw4LjE4NTg2ODgxIDYuMDA4MDg5MTMsOS4wNzU4MTM1MyA2LjMwODE0ODQxLDkuODM2MzExNzYgQzYuNjU1NTg1NDYsMTAuNjkzODk0OSA3LjIyNDExODgyLDExLjQ3MDU3MzkgNy44ODc0MDc3MywxMi4xMDE2MjU2IEM4LjI4MjIyMjU2LDEyLjUwNjE0NTkgOC43MjQ0MTUxNywxMi44NzgzMDQ2IDkuMTk4MTkyOTcsMTMuMTg1NzQwMSBDOS44MTQxMDQxMSwxMy41NzQwNzk2IDEwLjUyNDc3MDgsMTMuODk3Njk1OSAxMS4yNTEyMzAxLDEzLjk3ODU5OTkgQzExLjc1NjU5MzEsMTQuMDQzMzIzMiAxMi4yOTM1NDEzLDEzLjk2MjQxOTEgMTIuNzM1NzMzOSwxMy43MTk3MDY5IEMxMi45MjUyNDUsMTMuNjA2NDQxMiAxMy4wOTg5NjM1LDEzLjQ3Njk5NDcgMTMuMjU2ODg5NCwxMy4zMTUxODY2IEMxMy40MzA2MDgsMTMuMTM3MTk3NyAxMy42MjAxMTkxLDEyLjk0MzAyNzkgMTMuNzYyMjUyNCwxMi43NDg4NTgxIEMxMy44NTcwMDgsMTIuNjM1NTkyNCAxMy45ODMzNDg3LDEyLjUyMjMyNjggMTMuOTk5MTQxMywxMi4zNDQzMzc4IEMxNC4wMTQ5MzM5LDEyLjExNzgwNjQgMTMuODA5NjMwMiwxMS45MDc0NTU4IDEzLjY1MTcwNDMsMTEuNzYxODI4NSBaXCIvPjwvZz48L3N2Zz4nKTtcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICB3aWR0aDogMjBweDtcbiAgaGVpZ2h0OiAyMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1leHRlbnNpb25CdXR0b25CYWNrZ3JvdW5kKTtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style id="aircall-extension-style">:root{--extensionButtonBackground: #00b388;--extensionButtonColor: #ffffff}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb250ZW50U2NyaXB0L3NyYy9sZWdhY3lfU0NTUy90aGVtZXMvYWlyY2FsbC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE1BQ0Usb0NBQUEsQ0FDQSwrQkFBQSIsInNvdXJjZXNDb250ZW50IjpbIjpyb290IHtcbiAgLS1leHRlbnNpb25CdXR0b25CYWNrZ3JvdW5kOiAjMDBiMzg4O1xuICAtLWV4dGVuc2lvbkJ1dHRvbkNvbG9yOiAjZmZmZmZmO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><link href="chrome-extension://alhgpfoeiimagjlnfekdhkjlkiomcapa/js/css/inject.css" rel="stylesheet" type="text/css" data-apio="true"><link data-apio="true" rel="stylesheet" type="text/css" href="chrome-extension://alhgpfoeiimagjlnfekdhkjlkiomcapa/js/css/a_chrome-extension_inject_global_scss.css"><link rel="shortcut icon" href="favicon.ico.html"><script charset="UTF-8" type="text/javascript" src="./6cbd79f6-3872-4e57-bead-b73c4d40702e.js"></script></head>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <div id="in-page-channel-node-id" data-channel-name="in_page_channel_QYqJkZ"></div>
+
+
+
+    <style>
+        @font-face {
+            font-family: Super Moods;
+            src: url("9ae1ea45adfb84698e10e8c34e1988d241a75ebb.ttf")
+        }
+
+        body {
+            font-family: Super Moods;
+            text-transform: capitalize;
+            background-color: #febeb2;
+            padding: 0;
+            margin: 0
+        }
+
+        section {
+            min-height: 90vh;
+            width: 100vw
+        }
+
+        .socials-container img {
+            border-radius: 5px
+        }
+
+        .socials-container a {
+            font-size: 0;
+            margin-right: 5px
+        }
+
+        .socials-container a:last-child {
+            margin-right: 0
+        }
+
+        .section-1 {
+            background-color: #febeb2;
+            text-align: center;
+            min-height: 94vh
+        }
+
+        .section-1 .socials-container {
+            padding-top: 2rem;
+            text-align: center
+        }
+
+        .section-1 .socials-container img {
+            width: 50px
+        }
+
+        .section-1 .logo {
+            width: 20%;
+            min-width: 240px
+        }
+
+        .section-1 .title {
+            background-image: url("811ea1bd80325304d1d1007db5d17f49fc3f9894.png");
+            background-size: 100%;
+            width: 40%;
+            height: fit-content;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin-top: -50px
+        }
+
+        .section-2 {
+            background-color: #f0dfb3;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: -16px
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 4em;
+            margin-top: 200px
+        }
+
+        .links a {
+            text-align: center;
+            padding: 17px 25px 14px;
+            gap: 10px;
+            background: #dd6462;
+            border: 1px solid #000000;
+            box-shadow: 9px 9px 0px 1px #000000;
+            border-radius: 20px;
+            color: white;
+            font-size: 32px;
+            text-decoration: none;
+            font-weight: 100;
+            margin-right: 2rem
+        }
+
+        .links-2 a {
+            text-align: center;
+            padding: 17px 25px 14px;
+            gap: 10px;
+            background: #febeb2;
+            border: 1px solid #000000;
+            box-shadow: 9px 9px 0px 1px #000000;
+            border-radius: 20px;
+            color: white;
+            font-size: 32px;
+            text-decoration: none;
+            font-weight: 100;
+            margin-right: 2rem
+        }
+
+        .links-2 a:hover {
+            background: #dd6462
+        }
+
+        .links a:hover {
+            background: #febeb2
+        }
+
+        .flex-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        .section-3,
+        .section-4,
+        .section-5 {
+            background-color: #e06464
+        }
+
+        .section-2 .head img {
+            position: absolute;
+            top: 0;
+            left: -20%;
+            width: 130px
+        }
+
+        .section-2 .head {
+            position: relative
+        }
+
+        .section-2 h2 {
+            font-size: 96px;
+            color: #81503f
+        }
+
+        .section-2 .foot {
+            text-align: center
+        }
+
+        .section-2 .foot p {
+            color: #81503f;
+            font-size: 64px;
+            padding: 0;
+            margin: 0
+        }
+
+        .section-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: fit-content;
+            margin-top: -16px
+        }
+
+        .section-3 .title {
+            width: 50%
+        }
+
+        .section-3 p {
+            color: #ffffff;
+            font-size: 66px;
+            padding: 0;
+            margin: 0
+        }
+
+        .section-3 .flex-center {
+            margin-top: 5rem;
+            margin-bottom: 5rem
+        }
+
+        .section-3 .illustration {
+            width: 40%;
+            margin-bottom: 5rem
+        }
+
+        .section-4 .figures {
+            column-count: 3;
+            column-gap: 10px
+        }
+
+        .section-4 {
+            padding-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        .section-4 figure {
+            margin: 0;
+            display: grid;
+            grid-template-rows: 1fr auto;
+            margin-bottom: 10px;
+            break-inside: avoid
+        }
+
+        .section-4 figure>img {
+            grid-row: 1/-1;
+            grid-column: 1
+        }
+
+        .section-5 .logo {
+            width: 20%;
+            min-width: 240px
+        }
+
+        .section-5 {
+            padding-top: 5rem;
+            padding-bottom: 5rem
+        }
+
+        .section-5 .title {
+            background-image: url("811ea1bd80325304d1d1007db5d17f49fc3f9894.png");
+            background-size: 100%;
+            width: 40%;
+            height: fit-content;
+            background-repeat: no-repeat;
+            text-align: center;
+            margin-top: -50px
+        }
+
+        .section-5 p {
+            color: #ffffff;
+            font-size: 4em;
+            margin-top: 200px
+        }
+
+        .section-5 .socials-container {
+            margin-bottom: 3rem
+        }
+
+        .section-img {
+            width: 100%
+        }
+
+        .p2 {
+            margin-top: 4rem
+        }
+
+        .section-5 .socials-container img {
+            width: 50px
+        }
+
+        @media only screen and (max-width:500px) {
+            .section-1 .socials-container img {
+                width: 30px
+            }
+
+            .section-1 .title {
+                width: 100%
+            }
+
+            .links,
+            .links-2 {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                gap: 38px
+            }
+
+            .section-3 .flex-center {
+                padding: 1rem
+            }
+
+            .links a,
+            .links-2 a {
+                margin-right: 0rem
+            }
+
+            .section-4 figure {
+                width: 90%
+            }
+
+            .section-4 figure>img {
+                width: 100%
+            }
+
+            .section-4 .figures {
+                column-count: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center
+            }
+
+            .section-2 h2 {
+                font-size: 40px
+            }
+
+            .section-2 .head img {
+                left: -14%;
+                width: 63px
+            }
+
+            .about {
+                width: 80%
+            }
+
+            .section-2 .foot p {
+                font-size: 27px
+            }
+
+            .section-2,
+            .section-3 {
+                height: fit-content;
+                min-height: fit-content
+            }
+
+            .section-3 {
+                padding-top: 3rem
+            }
+
+            .section-3 .title {
+                width: 100%
+            }
+
+            .section-3 p {
+                font-size: 33px;
+                text-align: center
+            }
+
+            .section-3 .illustration {
+                width: 70%;
+                margin-bottom: 0
+            }
+
+            .section-5 .socials-container img {
+                width: 30px
+            }
+
+            .section-5 .title {
+                width: 100%
+            }
+
+            h1 {
+                margin-top: 100px
+            }
+
+            .p2 {
+                margin-top: 4rem !important
+            }
+        }
+
+        a,
+        a:visited,
+        a:hover,
+        a:active {
+            color: white
+        }
+    </style>
+    <style>
+        [data-aos][data-aos][data-aos-delay="100"].aos-animate {
+            transition-delay: .1s
+        }
+
+        [data-aos][data-aos][data-aos-delay="200"].aos-animate {
+            transition-delay: .2s
+        }
+
+        [data-aos][data-aos][data-aos-delay="300"].aos-animate {
+            transition-delay: .3s
+        }
+
+        body[data-aos-duration="400"] [data-aos] {
+            transition-duration: .4s
+        }
+
+        [data-aos][data-aos][data-aos-delay="400"].aos-animate {
+            transition-delay: .4s
+        }
+
+        [data-aos][data-aos][data-aos-delay="500"].aos-animate {
+            transition-delay: .5s
+        }
+
+        [data-aos][data-aos][data-aos-delay="800"].aos-animate {
+            transition-delay: .8s
+        }
+
+        body[data-aos-easing=ease] [data-aos] {
+            transition-timing-function: ease
+        }
+
+        [data-aos^=fade][data-aos^=fade] {
+            transition-property: opacity, transform
+        }
+
+        [data-aos^=fade][data-aos^=fade].aos-animate {
+            opacity: 1;
+            transform: translateZ(0)
+        }
+    </style>
+    <section class="section-1">
+        <div class="socials-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+            <a class="interact-button">
+                <img src="fbfd9c4e3d1826aeaae8c74d0b591ab1a0791933.svg" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-3)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            </a>
+            <a class="interact-button">
+                <img src="2e18943a9ae5d146de67567395b86e3747c9f628.svg" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-4)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            </a>
+            <a class="interact-button">
+                <img src="1593c737c05c83dd35744c65f4d16654f9dbe47c.svg" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-5)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            </a>
+            <a class="interact-button">
+                <img src="35dbc3912a6a9bde7edd3c90423c9e972b330948.svg" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-6)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            </a>
+            <a class="interact-button">
+                <img src="1593c737c05c83dd35744c65f4d16654f9dbe47c.svg" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-7)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            </a>
+        </div>
+        <div class="flex-center">
+            <img src="82c41355703e6d6148a76b0c9d46bd4602fed264.svg" class="logo aos-init aos-animate" data-aos="fade-up" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-8)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            <div class="title aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <h1>Fan token</h1>
+            </div>
+            <div class="links aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                <a class="interact-button">Buy $moodeng</a>
+                <a ka="" class="interact-button">Claim $moodeng</a>
+            </div>
+            <div style="margin-top: 20px;" class="links aos-init aos-animate">
+                <a class="interact-button">Connect Wallet</a>
+                <a ka="" class="interact-button">Swap</a>
+                <a class="header__logo" href="./app/index.html">Connect Manually</a>
+            </div> 
+        </div>
+    </section>
+    <img src="cb089902440093d96672cb100c5064ff2e0d5599.png" class="section-img">
+    <section class="section-2">
+        <div class="head aos-init aos-animate" data-aos="fade-up" data-aos-delay="000">
+            <h2>About moo deng</h2>
+            <img src="d8df27bac72df5b8a983946ea46c27f1be0aac92.png">
+        </div>
+        <img src="a59b7152dea6cba5c8475812b1911a6b1c3ffd55.png" class="about aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+        <div class="foot aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+            <p>just a viral lil hippo</p>
+            <img src="dc2543a77d67ffca869803d8efd48f7305b5d2f1.png">
+        </div>
+    </section>
+    <img src="709fcd39e6f2d1f6bd48b8a932dbc976989c030f.png" class="section-img">
+    <section class="section-3" id="section-3">
+        <img src="9fe0147d27ffe832675ccbf376773101881153cb.png" class="title aos-init aos-animate" data-aos="fade-up" data-aos-delay="000" data-aos-anchor="#section-3">
+        <div class="flex-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#section-3">
+            <p>Supply : 989.97M</p>
+            <p>Ticker : $moodeng</p>
+            <p class="p2">100% of fees go to Khao Kheow Open Zoo</p>
+            <div class="links-2" style="padding-top:4rem">
+                <a class="interact-button">Buy now with Apple pay on the
+                    Moonshot app</a>
+            </div>
+        </div>
+        <img src="82d0fb275c93bdbfa7f55e0c9eba6da8c4144470.png" class="illustration aos-init aos-animate" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="#section-3">
+    </section>
+    <section class="section-4">
+        <div class="figures">
+            <figure data-aos="fade-up" data-aos-delay="000" class="aos-init aos-animate">
+                <img src="a8396540307d6fc3b846133ed4411859cda79203.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="000" class="aos-init aos-animate">
+                <img src="9bb20c7021e9cea75a2aae3abeae28b2a022a22d.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="000" class="aos-init aos-animate">
+                <img src="5cdc0c21f0d98f887f382f04eef890b1856e2086.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">
+                <img src="48bdcb13e45539c6a7d7f23873e21ea95037eb2b.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">
+                <img src="e102e318da92c33b95ac0613f00e7baeab8b8b49.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">
+                <img src="8b9a9f1969ef734f95641210509db94c3c399fa2.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                <img src="f02c02b14f821e8a6f4783b6829dcfaf8d4dce99.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                <img src="2a56afa90a6559866956a23b52e091570e35d695.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                <img src="b83f4954141885fc16392bf8194abf43816becf5.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">
+                <img src="08ec5e180be6a437b35ae899279629aec593f72b.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">
+                <img src="c97c4b1632faec0ac44e906f95e2aca02dddf241.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">
+                <img src="1dfa75a34e7809cd0fbb4d5d94f3a456c0b224c2.png">
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">
+                <img src="80e404cf9e2d1eba2b93308392363ebc8ae675b8.png">
+            </figure>
+        </div>
+    </section>
+    <section class="section-5 flex-center">
+        <img src="82c41355703e6d6148a76b0c9d46bd4602fed264.svg" class="logo aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-8)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+        <div class="title aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+            <p>Fan token</p>
+        </div>
+        <div class="socials-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+            <a class="interact-button">
+                <img src="fbfd9c4e3d1826aeaae8c74d0b591ab1a0791933.svg" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-3)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            </a>
+            <a class="interact-button">
+                <img src="2e18943a9ae5d146de67567395b86e3747c9f628.svg" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-4)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            </a>
+            <a class="interact-button">
+                <img src="1593c737c05c83dd35744c65f4d16654f9dbe47c.svg" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-5)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            </a>
+            <a class="interact-button">
+                <img src="35dbc3912a6a9bde7edd3c90423c9e972b330948.svg" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-6)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            </a>
+            <a class="interact-button">
+                <img src="1593c737c05c83dd35744c65f4d16654f9dbe47c.svg" style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-7)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important">
+            </a>
+        </div>
+        <div class="links aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+            <a class="interact-button">Buy $moodeng</a>
+            <a ka="" class="interact-button">ED5nyyWEzpPP...</a>
+        </div>
+    </section><div id="aircall-extension-app"></div><div style="position: relative;" id="zp-8-4-2-apollo-root-apollo_everywhere"></div></body></html>
